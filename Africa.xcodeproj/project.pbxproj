@@ -24,6 +24,7 @@
 		2D38657B2969DABF00DA8040 /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D38657A2969DABF00DA8040 /* CoverImageModel.swift */; };
 		2D38657E2969DC2C00DA8040 /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D38657D2969DC2C00DA8040 /* CodableBundleExtension.swift */; };
 		2D386580296B26B200DA8040 /* AnimalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D38657F296B26B200DA8040 /* AnimalListItemView.swift */; };
+		2D386582296B284900DA8040 /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D386581296B284900DA8040 /* AnimalModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		2D38657A2969DABF00DA8040 /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
 		2D38657D2969DC2C00DA8040 /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 		2D38657F296B26B200DA8040 /* AnimalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListItemView.swift; sourceTree = "<group>"; };
+		2D386581296B284900DA8040 /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				2D38657A2969DABF00DA8040 /* CoverImageModel.swift */,
+				2D386581296B284900DA8040 /* AnimalModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				2D386575296893BC00DA8040 /* MainView.swift in Sources */,
 				2D3865782969D61800DA8040 /* CoverImageView.swift in Sources */,
 				2D38657B2969DABF00DA8040 /* CoverImageModel.swift in Sources */,
+				2D386582296B284900DA8040 /* AnimalModel.swift in Sources */,
 				2D3865712968937800DA8040 /* MapView.swift in Sources */,
 				2D386554296886F500DA8040 /* AfricaApp.swift in Sources */,
 				2D38656F2968936A00DA8040 /* VideoListView.swift in Sources */,
