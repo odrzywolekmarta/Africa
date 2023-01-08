@@ -19,8 +19,9 @@ struct AnimalListItemView: View {
                 .scaledToFill()
                 .frame(width: 90, height: 90)
                 .clipShape(
-                RoundedRectangle(cornerRadius: 12)
+                    RoundedRectangle(cornerRadius: 12)
                 )
+            
             VStack(alignment: .leading, spacing: 8) {
                 Text(animal.name)
                     .font(.title2)
@@ -31,6 +32,7 @@ struct AnimalListItemView: View {
                     .multilineTextAlignment(.leading)
             } // vstack
         } // hstack
+        .listRowBackground(Color.clear)
     }
 }
 
