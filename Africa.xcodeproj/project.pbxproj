@@ -29,6 +29,7 @@
 		2D386586296B315400DA8040 /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D386585296B315400DA8040 /* HeadingView.swift */; };
 		2D386588296B329D00DA8040 /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D386587296B329D00DA8040 /* InsetGalleryView.swift */; };
 		2D38658A296B380100DA8040 /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D386589296B380100DA8040 /* InsetFactView.swift */; };
+		2DDB8FB4296C3B9400EB2FA3 /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDB8FB3296C3B9400EB2FA3 /* InsetMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		2D386585296B315400DA8040 /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
 		2D386587296B329D00DA8040 /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
 		2D386589296B380100DA8040 /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
+		2DDB8FB3296C3B9400EB2FA3 /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				2D386585296B315400DA8040 /* HeadingView.swift */,
 				2D386587296B329D00DA8040 /* InsetGalleryView.swift */,
 				2D386589296B380100DA8040 /* InsetFactView.swift */,
+				2DDB8FB3296C3B9400EB2FA3 /* InsetMapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				2D386584296B2C4F00DA8040 /* AnimalDetailView.swift in Sources */,
 				2D386582296B284900DA8040 /* AnimalModel.swift in Sources */,
 				2D3865712968937800DA8040 /* MapView.swift in Sources */,
+				2DDB8FB4296C3B9400EB2FA3 /* InsetMapView.swift in Sources */,
 				2D386554296886F500DA8040 /* AfricaApp.swift in Sources */,
 				2D38656F2968936A00DA8040 /* VideoListView.swift in Sources */,
 				2D386573296893AC00DA8040 /* GalleryView.swift in Sources */,
