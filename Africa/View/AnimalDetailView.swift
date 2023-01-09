@@ -68,6 +68,9 @@ struct AnimalDetailView: View {
                     }
                     .padding(.horizontal)
                     // LINK
+                    ExternalWeblinkView(animal: animal)
+                        .padding()
+                    
                 } // vstack
                 .navigationTitle("Learn about \(animal.name)")
                 .navigationBarTitleDisplayMode(.inline)
