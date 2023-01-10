@@ -9,7 +9,8 @@ import SwiftUI
 
 struct VideoListView: View {
     //MARK: - PROPERTIES
-    var videos: [VideoModel] = Bundle.main.decode("videos.json")
+   @State var videos: [VideoModel] = Bundle.main.decode("videos.json")
+    let hapticImpact = UIImpactFeedbackGenerator(style: .medium)
     
     //MARK: - BODY
     var body: some View {
@@ -20,9 +21,20 @@ struct VideoListView: View {
             }
             .listStyle(InsetGroupedListStyle())
             .navigationBarTitle("Videos")
-            .navigationBarTitleDisplayMode(.inline)
-        }
-    } // navigation list
+            .navigationBarTitleDisplayMode(.large)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        videos.shuffle()
+                        hapticImpact.impactOccurred()
+                    } label: {
+                        Image(systemName: "arrow.2.squarepath")
+                    }
+
+                }
+            }
+        } // navigaiton view
+    }
 }
 
 //MARK: - PREVIEW
