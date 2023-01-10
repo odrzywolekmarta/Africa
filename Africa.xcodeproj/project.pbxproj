@@ -44,6 +44,7 @@
 		2DDB8FD5296DA05900EB2FA3 /* giraffe.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2DDB8FCB296DA05800EB2FA3 /* giraffe.mp4 */; };
 		2DDB8FD6296DA05900EB2FA3 /* zebra.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2DDB8FCC296DA05800EB2FA3 /* zebra.mp4 */; };
 		2DDB8FD7296DA05900EB2FA3 /* hippo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2DDB8FCD296DA05900EB2FA3 /* hippo.mp4 */; };
+		2DDB8FDA296DCD3700EB2FA3 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDB8FD9296DCD3700EB2FA3 /* LocationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		2DDB8FCB296DA05800EB2FA3 /* giraffe.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = giraffe.mp4; sourceTree = "<group>"; };
 		2DDB8FCC296DA05800EB2FA3 /* zebra.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = zebra.mp4; sourceTree = "<group>"; };
 		2DDB8FCD296DA05900EB2FA3 /* hippo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hippo.mp4; sourceTree = "<group>"; };
+		2DDB8FD9296DCD3700EB2FA3 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 				2D38657A2969DABF00DA8040 /* CoverImageModel.swift */,
 				2D386581296B284900DA8040 /* AnimalModel.swift */,
 				2DDB8FB7296CE7AF00EB2FA3 /* VideoModel.swift */,
+				2DDB8FD9296DCD3700EB2FA3 /* LocationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			files = (
 				2DDB8FB6296C45AA00EB2FA3 /* ExternalWeblinkView.swift in Sources */,
 				2D386556296886F500DA8040 /* ContentView.swift in Sources */,
+				2DDB8FDA296DCD3700EB2FA3 /* LocationModel.swift in Sources */,
 				2D386580296B26B200DA8040 /* AnimalListItemView.swift in Sources */,
 				2D386575296893BC00DA8040 /* MainView.swift in Sources */,
 				2D38658A296B380100DA8040 /* InsetFactView.swift in Sources */,
