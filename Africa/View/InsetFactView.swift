@@ -9,7 +9,7 @@ import SwiftUI
 
 struct InsetFactView: View {
     //MARK: - PROPERTIES
-    let animal: Animal
+    let animal: AnimalModel
     
     //MARK: - BODY
     var body: some View {
@@ -27,7 +27,7 @@ struct InsetFactView: View {
 
 //MARK: - PREVIEW
 struct InsetFactView_Previews: PreviewProvider {
-    static let animals: [Animal] = Bundle.main.decode("animals.json")
+    static let animals: [AnimalModel] = Bundle.main.decode("animals.json")
     static var previews: some View {
         InsetFactView(animal: animals[0])
             .previewLayout(.sizeThatFits)

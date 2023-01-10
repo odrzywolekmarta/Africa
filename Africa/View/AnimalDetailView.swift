@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AnimalDetailView: View {
     //MARK: - PROPERTIES
-    let animal: Animal
+    let animal: AnimalModel
     
     //MARK: - BODY
     var body: some View {
@@ -67,6 +67,7 @@ struct AnimalDetailView: View {
                         InsetMapView()
                     }
                     .padding(.horizontal)
+                    
                     // LINK
                     ExternalWeblinkView(animal: animal)
                         .padding()
@@ -81,7 +82,7 @@ struct AnimalDetailView: View {
 
 //MARK: - PREVIEW
 struct AnimalDetailView_Previews: PreviewProvider {
-    static let animals: [Animal] = Bundle.main.decode("animals.json")
+    static let animals: [AnimalModel] = Bundle.main.decode("animals.json")
     
     static var previews: some View {
         AnimalDetailView(animal: animals[0])
