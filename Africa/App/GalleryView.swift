@@ -42,7 +42,6 @@ struct GalleryView: View {
                         Image(item.image)
                             .resizable()
                             .scaledToFill()
-                            .frame(width: 115, height: 115)
                             .clipShape(Circle())
                             .overlay(Circle().stroke(Color.white, lineWidth: 1))
                             .onTapGesture {
