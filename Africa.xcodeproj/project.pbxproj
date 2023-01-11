@@ -46,6 +46,7 @@
 		2DDB8FD7296DA05900EB2FA3 /* hippo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2DDB8FCD296DA05900EB2FA3 /* hippo.mp4 */; };
 		2DDB8FDA296DCD3700EB2FA3 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDB8FD9296DCD3700EB2FA3 /* LocationModel.swift */; };
 		2DDB8FDC296DD83700EB2FA3 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDB8FDB296DD83700EB2FA3 /* MapAnnotationView.swift */; };
+		2DDB8FDE296F1AC600EB2FA3 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDB8FDD296F1AC600EB2FA3 /* MotionAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		2DDB8FCD296DA05900EB2FA3 /* hippo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hippo.mp4; sourceTree = "<group>"; };
 		2DDB8FD9296DCD3700EB2FA3 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		2DDB8FDB296DD83700EB2FA3 /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
+		2DDB8FDD296F1AC600EB2FA3 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 				2DDB8FB9296CE8A500EB2FA3 /* VideoListItemView.swift */,
 				2DDB8FBB296CF11600EB2FA3 /* VideoPlayerView.swift */,
 				2DDB8FDB296DD83700EB2FA3 /* MapAnnotationView.swift */,
+				2DDB8FDD296F1AC600EB2FA3 /* MotionAnimationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				2DDB8FC1296CF25100EB2FA3 /* VideoPlayer.swift in Sources */,
 				2DDB8FBA296CE8A500EB2FA3 /* VideoListItemView.swift in Sources */,
 				2D38657E2969DC2C00DA8040 /* CodableBundleExtension.swift in Sources */,
+				2DDB8FDE296F1AC600EB2FA3 /* MotionAnimationView.swift in Sources */,
 				2D386586296B315400DA8040 /* HeadingView.swift in Sources */,
 				2DDB8FBC296CF11600EB2FA3 /* VideoPlayerView.swift in Sources */,
 			);
