@@ -41,7 +41,8 @@ struct GalleryView: View {
                     ForEach(animals) { item in
                         Image(item.image)
                             .resizable()
-                            .scaledToFit()
+                            .scaledToFill()
+                            .frame(width: 115, height: 115)
                             .clipShape(Circle())
                             .overlay(Circle().stroke(Color.white, lineWidth: 1))
                             .onTapGesture {
