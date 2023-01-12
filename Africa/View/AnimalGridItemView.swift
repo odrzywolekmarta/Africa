@@ -13,17 +13,10 @@ struct AnimalGridItemView: View {
     
     //MARK: - BODY
     var body: some View {
-        ZStack {
             Image(animal.image)
                 .resizable()
                 .scaledToFit()
             .cornerRadius(12)
-            
-            Text(animal.name.uppercased())
-                .font(.title2)
-                .foregroundColor(Color.white)
-                .bold()
-        } // zstack
     }
 }
 

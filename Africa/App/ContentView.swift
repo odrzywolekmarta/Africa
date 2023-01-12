@@ -11,9 +11,29 @@ struct ContentView: View {
     //MARK: - PROPERTIES
     let animals: [AnimalModel] = Bundle.main.decode("animals.json")
     let haptics = UIImpactFeedbackGenerator(style: .medium)
-    let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 2)
     
+    @State private var gridLayout: [GridItem] = [GridItem(.flexible())]
+    @State private var gridColumn: Int = 1
+    @State private var toolBarIcon: String = "square.grid.2x2"
     @State private var isGridViewActive: Bool = false
+    
+    func gridSwitch() {
+        withAnimation(.easeIn) {
+            gridLayout = Array(repeating: .init(.flexible()), count: gridLayout.count % 3 + 1)
+            gridColumn = gridLayout.count
+        }
+        
+        switch gridColumn {
+        case 1:
+            toolBarIcon = "square.grid.2x2"
+        case 2:
+            toolBarIcon = "square.grid.3x2"
+        case 3:
+            toolBarIcon = "rectangle.grid.1x2"
+        default:
+            toolBarIcon = "square.grid.2x2"
+        }
+    }
     
     //MARK: - BODY
 
@@ -41,7 +61,6 @@ struct ContentView: View {
                             } // loop
                         } // grid
                         .padding(10)
-                        .animation(.easeIn)
                     } // scrollview
                 } // condition
             } // group
@@ -61,13 +80,12 @@ struct ContentView: View {
                         Button {
                             isGridViewActive = true
                             haptics.impactOccurred()
+                            gridSwitch()
                         } label: {
-                            Image(systemName: "square.grid.2x2")
+                            Image(systemName: toolBarIcon)
                                 .font(.title2)
                                 .foregroundColor(isGridViewActive ? .accentColor : .primary)
                         }
-
-
                     } // hstack
                 }
             } // toolbar
