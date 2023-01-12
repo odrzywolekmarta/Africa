@@ -11,6 +11,7 @@ struct ContentView: View {
     //MARK: - PROPERTIES
     let animals: [AnimalModel] = Bundle.main.decode("animals.json")
     let haptics = UIImpactFeedbackGenerator(style: .medium)
+    let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 2)
     
     @State private var isGridViewActive: Bool = false
     
@@ -18,16 +19,32 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            List {
-                CoverImageView()
-                    .frame(height: 300)
-                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-                ForEach(animals) { animal in
-                    NavigationLink(destination: AnimalDetailView(animal: animal)) {
-                        AnimalListItemView(animal: animal)
-                    }
-                } // loop
-            } // list
+            Group {
+                if !isGridViewActive {
+                    List {
+                        CoverImageView()
+                            .frame(height: 300)
+                            .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                        ForEach(animals) { animal in
+                            NavigationLink(destination: AnimalDetailView(animal: animal)) {
+                                AnimalListItemView(animal: animal)
+                            }
+                        } // loop
+                    } // list
+                } else {
+                    ScrollView(.vertical, showsIndicators: false) {
+                        LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
+                            ForEach(animals) { animal in
+                                NavigationLink(destination: AnimalDetailView(animal: animal)) {
+                                    AnimalGridItemView(animal: animal)
+                                } // nav link
+                            } // loop
+                        } // grid
+                        .padding(10)
+                        .animation(.easeIn)
+                    } // scrollview
+                } // condition
+            } // group
             .navigationTitle("Africa")
             .navigationBarTitleDisplayMode(.large)
             .toolbar {

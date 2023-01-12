@@ -47,6 +47,7 @@
 		2DDB8FDA296DCD3700EB2FA3 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDB8FD9296DCD3700EB2FA3 /* LocationModel.swift */; };
 		2DDB8FDC296DD83700EB2FA3 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDB8FDB296DD83700EB2FA3 /* MapAnnotationView.swift */; };
 		2DDB8FDE296F1AC600EB2FA3 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDB8FDD296F1AC600EB2FA3 /* MotionAnimationView.swift */; };
+		2DDB8FE0296F978200EB2FA3 /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDB8FDF296F978200EB2FA3 /* AnimalGridItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		2DDB8FD9296DCD3700EB2FA3 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		2DDB8FDB296DD83700EB2FA3 /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 		2DDB8FDD296F1AC600EB2FA3 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
+		2DDB8FDF296F978200EB2FA3 /* AnimalGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGridItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				2DDB8FBB296CF11600EB2FA3 /* VideoPlayerView.swift */,
 				2DDB8FDB296DD83700EB2FA3 /* MapAnnotationView.swift */,
 				2DDB8FDD296F1AC600EB2FA3 /* MotionAnimationView.swift */,
+				2DDB8FDF296F978200EB2FA3 /* AnimalGridItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				2DDB8FB8296CE7AF00EB2FA3 /* VideoModel.swift in Sources */,
 				2D386573296893AC00DA8040 /* GalleryView.swift in Sources */,
 				2D386588296B329D00DA8040 /* InsetGalleryView.swift in Sources */,
+				2DDB8FE0296F978200EB2FA3 /* AnimalGridItemView.swift in Sources */,
 				2DDB8FC1296CF25100EB2FA3 /* VideoPlayer.swift in Sources */,
 				2DDB8FBA296CE8A500EB2FA3 /* VideoListItemView.swift in Sources */,
 				2D38657E2969DC2C00DA8040 /* CodableBundleExtension.swift in Sources */,
